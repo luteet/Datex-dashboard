@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+
+<div class="wrapper">
+	<main class="main">
+		<div class="main__header">
+			<div class="main__header--block">
+				<div class="main__accent-card">
+					<div class="main__accent-card--body">
+						<b>
+							Сегодня
+						</b>
+						<strong class="this-full-date">
+							21 мая 2023
+						</strong>
+						<b class="this-day">
+							Пятница
+						</b>
+					</div>
+				</div>
+			</div>
+			<div class="main__header--block">
+				<div class="main__header--content">
+					<h1 class="main__main-title main-title">
+						Татьяна, хорошего дня!
+					</h1>
+					<h2 class="main__subtitle">
+						Ваша статистика за последние 30 дней
+					</h2>
+				</div>
+			</div>
+			<div class="main__header--block">
+				<ul class="main__header-list">
+					<li class="main__header-card">
+						<div class="main__header-card--body">
+							<b>
+								Средний срок закрытия вакансий
+							</b>
+							<strong>
+								22 дня
+							</strong>
+						</div>
+					</li>
+					<li class="main__header-card">
+						<div class="main__header-card--body">
+							<b>
+								Закрыто всего вакансий
+							</b>
+							<strong>
+								22
+							</strong>
+						</div>
+					</li>
+					<li class="main__header-card">
+						<div class="main__header-card--body">
+							<b>
+								Среднее количество кандиадтов на вакансию
+							</b>
+							<strong>
+								11
+							</strong>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="main__header--block hide-on-table">
+				<div class="main__slava">
+					<picture>
+						<source srcset="img/flag.webp" type="image/webp">
+						<img src="img/flag.png" alt="UA flag" width="66" height="53" loading="lazy">
+					</picture>
+					<b class="main-title">
+						Слава Украине!
+					</b>
+				</div>
+			</div>
+		</div>
+		<div class="main__row">
+			<div class="main__aside-place visible-on-table"></div>
+			<div class="main__block">
+				<div class="main__block--body">
+					<div class="main__block--header">
+						<h2 class="main__block--title title">
+							Воронка подбора
+						</h2>
+						<a href="#" class="main__block--more">
+							Подробнее >>
+						</a>
+					</div>
+					<div class="main__block--funnel main__funnel">
+						<ul class="main__funnel--list">
+							<li class="main__funnel--item">
+								<progress class="main__funnel--progress" min="0" max="100" value="100"></progress>
+								<div class="main__funnel--info">
+									<b>Новые кандидаты <br> 100% (100)</b>
+								</div>
+							</li>
+							<li class="main__funnel--item">
+								<progress class="main__funnel--progress" min="0" max="100" value="81"></progress>
+								<div class="main__funnel--info">
+									<b>Телефонные интервью <br> 81% (81)</b>
+								</div>
+							</li>
+							<li class="main__funnel--item">
+								<progress class="main__funnel--progress" min="0" max="100" value="60"></progress>
+								<div class="main__funnel--info">
+									<b>Направленных резюме <br> 60% (60)</b>
+								</div>
+							</li>
+							<li class="main__funnel--item">
+								<progress class="main__funnel--progress" min="0" max="100" value="50"></progress>
+								<div class="main__funnel--info">
+									<b>Интервью с заказчиком <br> 50% (50)</b>
+								</div>
+							</li>
+							<li class="main__funnel--item">
+								<progress class="main__funnel--progress" min="0" max="100" value="40"></progress>
+								<div class="main__funnel--info">
+									<b>Проверка СБ <br> 40% (40)</b>
+								</div>
+							</li>
+							<li class="main__funnel--item">
+								<progress class="main__funnel--progress" min="0" max="100" value="20"></progress>
+								<div class="main__funnel--info">
+									<b>Джоб оффер <br> 20% (20)</b>
+								</div>
+							</li>
+							<li class="main__funnel--item">
+								<progress class="main__funnel--progress" min="0" max="100" value="5"></progress>
+								<div class="main__funnel--info">
+									<b>Принято <br> 5% (5)</b>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main__block">
+				<div class="main__block--body">
+					<div class="main__block--header">
+						<h2 class="main__block--title title">
+							Источники трафика
+						</h2>
+						<a href="#" class="main__block--more">
+							Подробнее >>
+						</a>
+					</div>
+					<div class="main__block--traffic main__traffic">
+						<div class="main__traffic--body">
+							<div class="main__traffic--chart">
+								<canvas class="main__traffic--canvas" id="traffic" width="300" height="300"></canvas>
+							</div>
+							<div class="main__traffic--legends" id="legend-container"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__block _min hide-on-table">
+				<div class="main__block--body">
+					<div class="main__block--header">
+						<h2 class="main__block--title title">
+							Вакансии по сроку закрытия
+						</h2>
+						<a href="#" class="main__block--more">
+							Подробнее >>
+						</a>
+					</div>
+					<div class="main__block--closed-vacancies main__closed-vacancies">
+						<div class="main__closed-vacancies--body">
+							<div class="main__closed-vacancies--value">
+								<strong>23</strong>
+								Всего закрыто
+							</div>
+							<canvas class="main__closed-vacancies--canvas" id="closed-vacancies" width="400"
+								height="250"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__block _large hide-on-table">
+				<div class="main__block--body _none-padding">
+					<div class="main__block--statistic main__statistic">
+						<table class="main__statistic--table">
+							<colgroup>
+								<col class="col-1">
+								<col class="col-2">
+								<col class="col-3">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>
+										Функция
+									</th>
+									<th>
+										Кол-ов приемов
+									</th>
+									<th>
+										Медианный срок закрытия
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>НR</td>
+									<td>5</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>IT</td>
+									<td>5</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>Безопасность</td>
+									<td>10</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Бизнес</td>
+									<td>21</td>
+									<td>21</td>
+								</tr>
+								<tr>
+									<td>Инфраструктура</td>
+									<td>4</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>Финансы</td>
+									<td>6</td>
+									<td>6</td>
+								</tr>
+								<tr>
+									<td>Другие</td>
+									<td>12</td>
+									<td>7</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<aside class="aside">
+		<div class="aside__header hide-on-table">
+			<form action="#" class="aside__search">
+				<label class="aside__search--label">
+					<input type="search" name="search" placeholder="Поиск кандидата в базе" required class="aside__search--input">
+				</label>
+				<button class="aside__search--submit" type="submit" title="Поиск">
+					<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.333252 9.66665C0.333252 12.142 1.31658 14.516 3.06692 16.2663C4.81726 18.0166 7.19123 19 9.66658 19C11.7393 19.0026 13.7528 18.3081 15.3832 17.0283L20.5049 22.1616C20.6134 22.271 20.7424 22.3578 20.8846 22.417C21.0267 22.4762 21.1792 22.5067 21.3332 22.5067C21.4873 22.5067 21.6398 22.4762 21.7819 22.417C21.9241 22.3578 22.0531 22.271 22.1616 22.1616C22.2709 22.0532 22.3577 21.9242 22.417 21.782C22.4762 21.6398 22.5067 21.4873 22.5067 21.3333C22.5067 21.1793 22.4762 21.0268 22.417 20.8846C22.3577 20.7425 22.2709 20.6134 22.1616 20.505L17.0282 15.3833C18.3081 13.7528 19.0025 11.7394 18.9999 9.66665C18.9999 7.19129 18.0166 4.81732 16.2662 3.06698C14.5159 1.31664 12.1419 0.333313 9.66658 0.333313C7.19123 0.333313 4.81726 1.31664 3.06692 3.06698C1.31658 4.81732 0.333252 7.19129 0.333252 9.66665ZM9.66658 2.66665C11.0511 2.66665 12.4044 3.07719 13.5556 3.84636C14.7067 4.61553 15.6039 5.70878 16.1337 6.98786C16.6636 8.26694 16.8022 9.67441 16.5321 11.0323C16.262 12.3901 15.5953 13.6374 14.6163 14.6164C13.6374 15.5954 12.3901 16.262 11.0322 16.5321C9.67435 16.8022 8.26688 16.6636 6.9878 16.1338C5.70872 15.604 4.61547 14.7068 3.8463 13.5556C3.07713 12.4045 2.66658 11.0511 2.66658 9.66665C2.66658 7.81013 3.40408 6.02965 4.71684 4.7169C6.02959 3.40414 7.81007 2.66665 9.66658 2.66665Z" fill="#464255"/>
+					</svg>
+				</button>
+			</form>
+		</div>
+		<div class="aside__list">
+			<div class="aside__block">
+				<div class="aside__block--body">
+					<h2 class="aside__block--title title">
+						Топ рекрутеров по закрытию вакансий
+					</h2>
+					<div class="aside__block--top aside__top">
+						<div class="aside__top--body">
+							<canvas class="aside__top--canvas" id="top" width="300" height="300"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aside__block">
+				<div class="aside__block--body">
+					<h2 class="aside__block--title title">
+						События в календаре на сегодня
+					</h2>
+					<div class="aside__block--calendar aside__calendar">
+						<ul class="aside__calendar--list">
+							<li class="aside__calendar--item">
+								<b>Встреча с клиентом</b>
+								<span>09:00 - 10:30</span>
+							</li>
+							<li class="aside__calendar--item">
+								<b>Встреча с клиентом</b>
+								<span>09:00 - 10:30</span>
+							</li>
+							<li class="aside__calendar--item">
+								<b>Встреча с клиентом</b>
+								<span>09:00 - 10:30</span>
+							</li>
+							<li class="aside__calendar--item">
+								<b>Встреча с клиентом</b>
+								<span>09:00 - 10:30</span>
+							</li>
+							<li class="aside__calendar--item">
+								<b>Встреча с клиентом</b>
+								<span>09:00 - 10:30</span>
+							</li>
+						</ul>
+						<a href="#" class="aside__calendar--link">
+							Посмотреть календарь
+							<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.999939 10H16.5899L11.2899 15.29C11.1962 15.383 11.1218 15.4936 11.0711 15.6154C11.0203 15.7373 10.9941 15.868 10.9941 16C10.9941 16.132 11.0203 16.2627 11.0711 16.3846C11.1218 16.5064 11.1962 16.617 11.2899 16.71C11.3829 16.8037 11.4935 16.8781 11.6154 16.9289C11.7372 16.9797 11.8679 17.0058 11.9999 17.0058C12.132 17.0058 12.2627 16.9797 12.3845 16.9289C12.5064 16.8781 12.617 16.8037 12.7099 16.71L19.7099 9.71C19.8037 9.61704 19.8781 9.50644 19.9288 9.38458C19.9796 9.26272 20.0057 9.13201 20.0057 9C20.0057 8.86799 19.9796 8.73728 19.9288 8.61542C19.8781 8.49357 19.8037 8.38296 19.7099 8.29L12.7099 1.29C12.6167 1.19676 12.506 1.1228 12.3842 1.07234C12.2624 1.02188 12.1318 0.995911 11.9999 0.995911C11.7336 0.995911 11.4782 1.1017 11.2899 1.29C11.1967 1.38324 11.1227 1.49393 11.0723 1.61575C11.0218 1.73758 10.9959 1.86814 10.9959 2C10.9959 2.2663 11.1016 2.5217 11.2899 2.71L16.5899 8H0.999939C0.734723 8 0.480369 8.10536 0.292832 8.29289C0.105296 8.48043 -6.10352e-05 8.73478 -6.10352e-05 9C-6.10352e-05 9.26522 0.105296 9.51957 0.292832 9.70711C0.480369 9.89464 0.734723 10 0.999939 10Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+</div>
+
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+:root {
+    --title-font: 'Poppins', sans-serif;
+    --main-font: 'Poppins', sans-serif;
+    
+    --accent: #2F80ED;
+
+    --white: #FFF;
+    --black: #000;
+    --gray: #A3A3A3;
+    --dark: #464255;
+    --dark-2: #53515c;
+    --dark-3: #393449;
+    --orange: #F2994A;
+    --blue: #2F80ED;
+    --red: #EB5757;
+    --light: #FDFDFD;
+
+    --container-padding: 15px;
+}
+
+@font-face {
+    @include font-include('Poppins', 400, swap, normal, 'Poppins-Regular');
+}
+
+@font-face {
+    @include font-include('Poppins', 700, swap, normal, 'Poppins-Bold');
+}
