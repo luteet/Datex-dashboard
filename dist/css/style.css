@@ -579,7 +579,8 @@ body._active,body._popup-active {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: -30px 0
+    margin: -30px 0;
+    pointer-events: none
 }
 
 .main__traffic--legends {

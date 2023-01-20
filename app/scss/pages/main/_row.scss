@@ -375,6 +375,8 @@
             @media (min-width: 500px) {
                 margin: -70px 0;
             }
+
+            pointer-events: none;
         }
 
         // .main__traffic--legends
