@@ -368,6 +368,10 @@ body._active,body._popup-active {
     color: var(--orange)
 }
 
+.main {
+    padding-bottom: 100px
+}
+
 .main__row {
     display: flex;
     flex-wrap: wrap;
