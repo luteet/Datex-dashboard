@@ -270,6 +270,7 @@ body._active,body._popup-active {
 }
 
 .title {
+    line-height: 140%;
     font-size: 1.125rem
 }
 
