@@ -68,7 +68,7 @@
 						<source srcset="img/flag.webp" type="image/webp">
 						<img src="img/flag.png" alt="UA flag" width="66" height="53" loading="lazy">
 					</picture>
-					<b class="main-title">
+					<b>
 						Слава Украине!
 					</b>
 				</div>
@@ -170,14 +170,27 @@
 								<strong>23</strong>
 								Всего закрыто
 							</div>
-							<canvas class="main__closed-vacancies--canvas" id="closed-vacancies" width="400"
-								height="250"></canvas>
+							<div class="main__closed-vacancies--side-text">
+								Количество закрытых вакансий
+							</div>
+							<canvas class="main__closed-vacancies--canvas" id="closed-vacancies" width="400" height="250"></canvas>
+							<div class="main__closed-vacancies--footer-text">
+								Срок закрытия вакансии, дни
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="main__block _large hide-on-table">
 				<div class="main__block--body _none-padding">
+					<div class="main__block--header _padding">
+						<h2 class="main__block--title title">
+							Принятые по подразделениям
+						</h2>
+						<a href="#" class="main__block--more">
+							Подробнее >>
+						</a>
+					</div>
 					<div class="main__block--statistic main__statistic">
 						<table class="main__statistic--table">
 							<colgroup>
@@ -188,13 +201,13 @@
 							<thead>
 								<tr>
 									<th>
-										Функция
+										Подразделение
 									</th>
 									<th>
-										Кол-ов приемов
+										Принятые
 									</th>
 									<th>
-										Медианный срок закрытия
+										Срок закрытия
 									</th>
 								</tr>
 							</thead>

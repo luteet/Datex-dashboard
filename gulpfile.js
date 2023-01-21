@@ -64,7 +64,7 @@ function scriptsLib() {
         //'node_modules/nouislider/dist/nouislider.min.js', // Кастомный input[range]
         //'node_modules/fslightbox/index.js', // Галерея
         //'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll()
-        'node_modules/chart.js/dist/chart.umd.js', // График
+        'node_modules/chart.js/dist/Chart.min.js', // График
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -117,7 +117,7 @@ function styles() {
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(mediaGroup())
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 1 version'],
+            overrideBrowserslist: ['last 2 version'],
             grid: true
         }))
         .pipe(minCSS())

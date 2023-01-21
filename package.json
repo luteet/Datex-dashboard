@@ -10,7 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.13",
-    "chart.js": "^4.2.0",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
@@ -27,5 +26,8 @@
     "gulp-zip": "^4.2.0",
     "normalize.css": "^8.0.1",
     "sass": "^1.45.0"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.4"
   }
 }

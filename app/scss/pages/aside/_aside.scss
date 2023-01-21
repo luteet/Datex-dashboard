@@ -1,5 +1,21 @@
 .aside {
 
+    flex: 1 1 100%;
+    padding-top: 30px;
+    
+    @include _992 {
+        flex: 0 0 330px;
+        padding-top: 0;
+    }
+
+    @media (min-width: 1280px) {
+        flex: 0 0 330px;
+    }
+
+    @media (min-width: 1650px) {
+        flex: 0 0 403px;
+    }
+
     // .aside__header
 
     &__header {
@@ -26,14 +42,14 @@
 
             padding: 23px 95px 23px 32px;
             background: #ECEAF3;
-            color: var(--gray);
+            color: #A3A3A3;
             font-weight: 700;
 
             transition: color .2s ease-in-out;
             border-radius: 18px;
 
             &::placeholder {
-                color: var(--gray);
+                color: #A3A3A3;
                 opacity: 1;
 
                 transition: opacity .2s ease-in-out;
@@ -44,7 +60,7 @@
             }
 
             &:focus {
-                color: var(--dark);
+                color: #464255;
             }
            
         }
@@ -150,7 +166,7 @@
 
             padding: 16px 25px;
 
-            background: var(--light);
+            background: #FDFDFD;
             border-radius: 14px;
 
             & b {
@@ -162,7 +178,7 @@
                 padding-top: 4px;
                 font-weight: 700;
                 font-size: 0.875rem;
-                color: var(--gray);
+                color: #A3A3A3;
             }
         }
 
@@ -181,7 +197,7 @@
 
             color: #FFF;
 
-            background: var(--dark);
+            background: #464255;
             border-radius: 18px;
 
             padding: 13.5px 15px 13.5px 24px;
@@ -192,11 +208,11 @@
 
             transition: background .2s ease-in-out;
             &:hover {
-                background: var(--dark-2);
+                background: #53515c;
             }
             
             &:active {
-                background: var(--dark-3);
+                background: #393449;
             }
 
             & svg {

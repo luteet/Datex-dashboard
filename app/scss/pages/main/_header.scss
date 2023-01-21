@@ -1,5 +1,7 @@
 .main {
 
+    flex: 1 1 auto;
+
     @include _992 {
         padding-right: 45px;
     }
@@ -12,8 +14,10 @@
         flex-direction: column;
         
         @include _992 {
-            display: grid;
-            grid-template-columns: auto min-content;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
         }
 
         margin: -11.5px;
@@ -32,24 +36,53 @@
 
             &:nth-child(1) {
                 @include _992 {
-                    grid-row: 2/2; grid-column: 2/2;
+                    order: 4;
+                    flex: 0 1 20%;
+                }
+
+                @media (min-width: 1280px) {
+                    flex: 0 1 25%;
                 }
             }
 
             &:nth-child(2) {
                 @include _992 {
-                    grid-row: 1/1; grid-column: 1/1;
+                    order: 1;
+                    flex: 0 1 60%;
                 }
             }
 
             &:nth-child(3) {
                 @include _992 {
-                    grid-row: 2/2; grid-column: 1/1;
+                    order: 3;
+                    flex: 0 1 100%;
+                }
+
+                @media (min-width: 1280px) {
+                    flex: 0 1 78%;
+                }
+                
+                @media (min-width: 1280px) {
+                    flex: 0 1 68%;
                 }
             }
 
             &:nth-child(4) {
-                
+                @include _992 {
+                    order: 2;
+                    flex: 0 1 270px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                }
+
+                @media (min-width: 1280px) {
+                    flex: 0 1 308px;
+                }
+
+                @media (min-width: 1400px) {
+                    flex: 0 1 338px;
+                }
             }
 		}
 
@@ -70,6 +103,9 @@
 
 		&--body {
             @include _992 {
+                min-width: 150px;
+            }
+            @media (min-width: 1280px) {
                 min-width: 208px;
             }
             @media (min-width: 1650px) {
@@ -85,7 +121,7 @@
 
             min-width: 100%;
 
-            background: var(--accent);
+            background: #2F80ED;
             color: #FFF;
 
             & b {
@@ -94,7 +130,10 @@
             }
 
             & strong {
-                font-size: 1.5rem;
+                font-size: 1.125rem;
+                @media (min-width: 1280px) {
+                    font-size: 1.5rem;
+                }
                 @media (min-width: 1650px) {
                     font-size: 2rem;
                 }
@@ -149,6 +188,32 @@
         & img {
             margin-right: 10px;
         }
+
+        & b {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 150%;
+
+            margin: 0;
+
+            font-size: 1.25rem;
+
+            @include _992 {
+                font-size: 1.25rem;
+            }
+
+            @media (min-width: 1280px) {
+                font-size: 1.5rem;
+            }
+
+            @media (min-width: 1400px) {
+                font-size: 1.75rem;
+            }
+
+            @media (min-width: 1500px) {
+                font-size: 2.12rem;
+            }
+        }
 	}
 
 	// .main__header-list
@@ -160,7 +225,7 @@
         margin: -10px;
         
         @media (min-width: 1750px) {
-            padding-right: 15%;
+            //padding-right: 15%;
             margin: -14.5px;
         }
 	}
@@ -169,23 +234,31 @@
 
 	&__header-card {
 
-        flex: 1 1 auto;
-        @media (min-width: 1500px) {
-            flex: 0 1 33.333%;
+        flex: 1 1 100%;
+        @include _992 {
+            flex: 0 1 33%;
         }
-        padding: 10px;
+        /* @media (min-width: 1500px) {
+            flex: 0 1 33%;
+        } */
+
+        padding: 10px 0;
+
         @media (min-width: 1750px) {
-            padding: 14.5px;
+            padding: 14.5px 0;
         }
 
 		// .main__header-card--body
 
 		&--body {
             padding: 15px;
+            margin: 0 10px;
             @media (min-width: 1750px) {
                 padding: 25px;
                 border-radius: 24px;
+                margin: 0 14.5px;
             }
+            
             min-height: 100%;
 
             display: flex;
@@ -194,7 +267,7 @@
             background: #FDFDFD;
             border-radius: 14px;
 
-            min-width: 200px;
+            min-width: 150px;
 
             & b {
                 font-size: 0.875rem;
@@ -211,7 +284,7 @@
                     font-size: 2.12rem;
                 }
                 line-height: 100%;
-                color: var(--orange);
+                color: #F2994A;
             }
 		}
 	}
