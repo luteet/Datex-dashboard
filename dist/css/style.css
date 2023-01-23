@@ -14,10 +14,6 @@ progress,sub,sup {
     vertical-align: baseline
 }
 
-.wrapper,body {
-    display: -webkit-box
-}
-
 .main__accent-card--body,.main__block--body,.main__header,.main__header-card--body,body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal
@@ -214,7 +210,8 @@ textarea {
 
 .main-title,body {
     line-height: 150%;
-    margin: 0
+    margin: 0;
+    font-family: Poppins,sans-serif
 }
 
 summary {
@@ -239,8 +236,8 @@ body,html {
 }
 
 body {
-    font-family: Poppins,sans-serif;
     font-weight: 400;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -249,27 +246,26 @@ body {
     background: #f3f2f7
 }
 
-.main-title,.title {
-    font-weight: 700;
-    font-family: Poppins,sans-serif
-}
-
 body._active,body._popup-active {
     overflow: hidden
 }
 
 .wrapper {
     min-height: 100%;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 35px 15px
 }
 
 .main-title {
+    font-weight: 700;
     font-size: 1.5rem
 }
 
 .title {
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
     line-height: 140%;
     font-size: 1.125rem
 }
@@ -307,15 +303,12 @@ body._active,body._popup-active {
     height: 100%
 }
 
-.main__accent-card--body,.main__slava {
-    display: -ms-flexbox;
-    display: -webkit-box
-}
-
 .main__accent-card--body {
     width: 100%;
     padding: 20px;
     border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -350,6 +343,8 @@ body._active,body._popup-active {
 }
 
 .main__slava {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -529,7 +524,8 @@ body._active,body._popup-active {
 .main__funnel--item {
     display: flex;
     position: relative;
-    padding: 6px 0
+    padding: 6px 0;
+    margin: 6px 0
 }
 
 .main__funnel--item>* {
@@ -545,7 +541,7 @@ body._active,body._popup-active {
     left: 0;
     top: 0;
     opacity: .1;
-    height: 40px
+    height: 100%
 }
 
 .main__funnel--progress::-webkit-progress-bar {
@@ -1007,8 +1003,8 @@ body._active,body._popup-active {
 }
 
 @media (min-width:992px) {
-    .aside__list,.main__header {
-        -webkit-box-direction: normal
+    .main__main-title,.main__subtitle {
+        text-align: left
     }
 
     .visible-on-table {
@@ -1034,6 +1030,7 @@ body._active,body._popup-active {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
         -webkit-box-pack: justify;
@@ -1094,13 +1091,8 @@ body._active,body._popup-active {
         width: auto
     }
 
-    .main__main-title {
-        text-align: left
-    }
-
     .main__subtitle {
         font-weight: 700;
-        text-align: left;
         padding-top: 45px
     }
 
@@ -1167,6 +1159,14 @@ body._active,body._popup-active {
         display: inline
     }
 
+    .main__funnel--item {
+        margin: 0
+    }
+
+    .main__funnel--progress {
+        height: 40px
+    }
+
     .main__statistic--table thead th {
         padding: 20px 0 15px;
         font-size: .875rem
@@ -1193,6 +1193,7 @@ body._active,body._popup-active {
 
     .aside__list {
         -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column
     }
