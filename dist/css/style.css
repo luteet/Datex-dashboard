@@ -626,8 +626,7 @@ body._active,body._popup-active {
 }
 
 .main__statistic {
-    padding-bottom: 30px;
-    overflow-x: auto
+    padding-bottom: 30px
 }
 
 .main__statistic--table tbody td,.main__statistic--table thead th {
@@ -636,8 +635,7 @@ body._active,body._popup-active {
 }
 
 .main__statistic--table {
-    width: 100%;
-    min-width: 500px
+    width: 100%
 }
 
 .main__statistic--table .col-1 {
@@ -1169,12 +1167,9 @@ body._active,body._popup-active {
         display: inline
     }
 
-    .main__statistic--table {
-        min-width: 555px
-    }
-
     .main__statistic--table thead th {
-        padding: 20px 0 15px
+        padding: 20px 0 15px;
+        font-size: .875rem
     }
 
     .main__statistic--table tbody td:last-child,.main__statistic--table thead th:last-child {
@@ -1185,13 +1180,8 @@ body._active,body._popup-active {
         text-align: center
     }
 
-    .main__statistic--table tbody td {
-        padding-top: 17px;
-        padding-bottom: 17px
-    }
-
     .main__statistic--table tbody td:first-child {
-        padding-left: 80px
+        padding-left: 20px
     }
 
     .aside {
@@ -1252,6 +1242,15 @@ body._active,body._popup-active {
         font-size: 1.5rem
     }
 
+    .main__statistic--table thead th {
+        font-size: 1rem
+    }
+
+    .main__statistic--table tbody td {
+        padding-top: 17px;
+        padding-bottom: 17px
+    }
+
     .aside {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 300px;
@@ -1309,6 +1308,14 @@ body._active,body._popup-active {
 
     .main__funnel--progress {
         height: 50px
+    }
+
+    .main__statistic--table tbody td:first-child {
+        padding-left: 80px
+    }
+
+    .main__statistic--table tbody td:last-child {
+        padding-right: 80px
     }
 
     .aside__top--canvas {
