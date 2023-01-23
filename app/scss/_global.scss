@@ -36,13 +36,14 @@ body {
     
     padding: 35px 15px;
     @include _768 {
-        padding: 35px;
-    }
-    @include _992 {
-        //grid-template-columns: auto 275px;
+        padding: 35px 25px;
     }
     @media (min-width: 1280px) {
         //grid-template-columns: auto 310px;
+        padding: 65px 25px;
+    }
+
+    @media (min-width: 1440px) {
         padding: 65px;
     }
     /* @media (min-width: 1650px) {

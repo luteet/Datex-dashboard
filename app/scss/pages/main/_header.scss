@@ -3,6 +3,10 @@
     flex: 1 1 auto;
 
     @include _992 {
+        padding-right: 20px;
+    }
+
+    @media (min-width: 1440px) {
         padding-right: 45px;
     }
 
@@ -37,11 +41,13 @@
             &:nth-child(1) {
                 @include _992 {
                     order: 4;
-                    flex: 0 1 20%;
+                    flex: 0 1 21%;
+                    width: 21%;
                 }
 
                 @media (min-width: 1280px) {
                     flex: 0 1 25%;
+                    width: 25%;
                 }
             }
 
@@ -49,28 +55,31 @@
                 @include _992 {
                     order: 1;
                     flex: 0 1 60%;
+                    width: 60%;
                 }
             }
 
             &:nth-child(3) {
                 @include _992 {
                     order: 3;
-                    flex: 0 1 100%;
+                    flex: 0 1 72%;
+                    width: 72%;
+                    //flex: 0 1 100%;
                 }
 
-                @media (min-width: 1280px) {
+                /* @media (min-width: 1280px) {
                     flex: 0 1 78%;
-                }
+                } */
                 
                 @media (min-width: 1280px) {
-                    flex: 0 1 68%;
+                    flex: 0 1 68%; width: 68%;
                 }
             }
 
             &:nth-child(4) {
                 @include _992 {
                     order: 2;
-                    flex: 0 1 270px;
+                    flex: 0 1 200px;
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-start;
@@ -99,11 +108,15 @@
         display: flex;
         justify-content: flex-end;
 
+        height: 100%;
+
 		// .main__accent-card--body
 
 		&--body {
+            width: 100%;
             @include _992 {
                 min-width: 150px;
+                width: auto;
             }
             @media (min-width: 1280px) {
                 min-width: 208px;
@@ -118,8 +131,9 @@
 
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
 
-            min-width: 100%;
+            height: 100%;
 
             background: #2F80ED;
             color: #FFF;
@@ -196,10 +210,10 @@
 
             margin: 0;
 
-            font-size: 1.25rem;
+            font-size: 1rem;
 
             @include _992 {
-                font-size: 1.25rem;
+                font-size: 1rem;
             }
 
             @media (min-width: 1280px) {
@@ -221,6 +235,9 @@
 	&__header-list {
         display: flex;
         flex-wrap: wrap;
+        @include _992 {
+            flex-wrap: nowrap;
+        }
 
         margin: -10px;
         
@@ -259,7 +276,7 @@
                 margin: 0 14.5px;
             }
             
-            min-height: 100%;
+            height: 100%;
 
             display: flex;
             flex-direction: column;

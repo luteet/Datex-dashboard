@@ -63,17 +63,17 @@ function resize() {
 
 	windowSize = window.innerWidth;
 
-	resizeCheckFunc(500,
+	/* resizeCheckFunc(500,
 		function () {  // screen >
 
-			padding = 130;
+			padding = 100;
 
 		},
 		function () {  // screen <
 
 			padding = 100;
 
-		});
+		}); */
 
 	resizeCheckFunc(992,
 		function () {  // screen > 992px
@@ -88,6 +88,18 @@ function resize() {
 			fontSize = 14;
 			paddingRight = 30;
 			asidePlace.appendChild(aside)
+
+		});
+
+	resizeCheckFunc(1100,
+		function () {  // screen >
+
+			padding = 130;
+
+		},
+		function () {  // screen <
+
+			padding = 100;
 
 		});
 
@@ -295,6 +307,7 @@ function topRecruiters() {
 		options: {
 			//scaleLineColor: "rgba(0,0,0,0)",
 			responsive: true,
+			maintainAspectRatio: false,
 			animation: {
 				duration: 0
 			},
@@ -486,8 +499,10 @@ function traffic() {
 						let xSize;
 						let ySize;
 
-						if(window.innerWidth > 600) {
+						if(window.innerWidth > 1100) {
 							xSize = 95
+						} else if(window.innerWidth > 600) {
+							xSize = 55
 						} else {
 							xSize = 45
 						}

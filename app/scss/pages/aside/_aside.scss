@@ -4,12 +4,12 @@
     padding-top: 30px;
     
     @include _992 {
-        flex: 0 0 330px;
+        flex: 0 0 250px;
         padding-top: 0;
     }
 
     @media (min-width: 1280px) {
-        flex: 0 0 330px;
+        flex: 0 0 300px;
     }
 
     @media (min-width: 1650px) {
@@ -134,12 +134,19 @@
         // .aside__top--body
 
         &--body {
+            /* height: 400px !important;
+            @media (min-width: 1440px) {
+                height: 300px;
+            } */
         }
 
         // .aside__top--canvas
 
         &--canvas {
-            width: 100% !important;
+            width: 100% !important; height: 400px !important;
+            @media (min-width: 1440px) {
+                height: 300px;
+            }
         }
     }
 
